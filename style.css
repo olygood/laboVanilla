@@ -1,52 +1,142 @@
+/* ROOT n' est pas (*) attentention a ça */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
-
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box
 
+}
+/* reset css -------------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+/* APP est la div maitresse de toute l'application */
+#app {
+  width: 1200px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 5px solid rgb(31, 34, 68);
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   border: 2px solid green;
-  /* a voir si ca ne pose pas de probleme min-height */
   min-height: 100vh;
+  /* a voir si ca ne pose pas de probleme min-height */
+  /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);  */
+  /* background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%); */
+  /* background-blend-mode: screen; */
+  /* background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+ background-blend-mode: screen; */
+  /* background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%); */
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+ 
+  
 }
-
-#app {
-  width: 1200px;
-  height: auto;
-  border: 2px solid red;
-  color: black;
-}
-
 .header {
-  width: 100%;
-  height: auto;
-  border: 2px solid black;
-  background: #213547;
-  color: white;
-}
-.main{
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid blue;
+  background-image: linear-gradient(to bottom, #1d2127, #1e2a3c, #1f3352, #223c68, #29447f);
+  color: white;
 }
-.mainLeft{
-  border: 2px solid yellow;
-}
-.mainRight{
-  border: 2px solid blue;
 
+.header-link {
+  width: 500px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #1d2127, #1e2a3c, #1f3352, #223c68, #29447f);
+  color: white;
+  box-shadow: #c3c3c3 0px 0px 5px 1px;
+  text-decoration: none;
+  /* border: 2px solid black;  */
+
+}
+
+.header-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+
+
+
+  /* background-color: #85FFBD; */
+  /* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+  /* background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%); */
+  /* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+
+
+}
+
+.mainLeft {
+
+  color: #1d2127;
+  text-align: center;
+  width: 25%;
+  height: auto;
+  background: rgba(255, 255, 180, 0.546);
+  /* background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%); */
+  /* background-blend-mode: screen; */
+  /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+  /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
+}
+
+.mainCenter {
+  color: rgb(240, 126, 19);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1a1a1a;
+  width: 50%;
+  height: auto;
+  background: rgba(206, 225, 248, 0.546);
+}
+
+.mainRight {
+
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  text-align: center;
+  width: 25%;
+  height: auto;
+  color: #1d2127;
+  background: rgba(255, 196, 175, 0.619);
+  /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+}
+.footer {
+
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 0%, rgba(4, 0, 4, 1) 90%);
+  color: white;
+  width: 100%;
+  height: auto;
+ 
 }
 
 a {
@@ -65,7 +155,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -84,4 +174,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */

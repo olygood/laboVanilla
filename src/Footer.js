@@ -2,7 +2,7 @@ import '/style.css'
 
 export const Footer = 
 `<div class="footer">
-    <h2>je suis le footer</h2>
-    <p>lorem ipsum footer goalllll</p>
+    <p>je suis le footer</p>
+    <p>Créer par olygood</p>
 </div>
 `
